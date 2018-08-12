@@ -1,1 +1,1 @@
-worker: nodemon bot.js
+worker: nodemon index.js
