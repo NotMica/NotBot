@@ -98,7 +98,20 @@ bot.on("message", async message => {
     }
     else if (cmd === `mico?`){
         message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
-    };
+    }
+    else if (cmd === `Míco?`){
+        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+    }
+    else if (cmd === `Míco`){
+        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+    }
+    else if (cmd === `míco?`){
+        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+    }
+    else if (cmd === `míco`){
+        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+    }
+    ;
 
     if (cmd === `nečum`){
         message.channel.send({file: "https://i.imgur.com/wnQ8Gc5.png"});
@@ -139,6 +152,5 @@ bot.on("message", async message => {
         message.channel.send("------------------------------------");
     }
 });
-
 
 bot.login(process.env.BOT_TOKEN);
