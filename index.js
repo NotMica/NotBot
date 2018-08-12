@@ -142,6 +142,19 @@ bot.on("message", async message => {
         message.channel.send({file: "https://i.imgur.com/B8PM9ZP.png"});
     };
 
+    if (cmd === "papa"){
+        message.channel.sendMessage("Papa :heart:");
+    }
+    else if(cmd === "Papa"){
+        message.channel.sendMessage("Papa :heart:");
+    }
+    else if(cmd === "Papa :heart:"){
+        message.channel.sendMessage("Papa :heart:");
+    }
+    else if(cmd === "papa :heart:"){
+        message.channel.sendMessage("Papa :heart:");
+    };
+
     if(cmd == `${prefix}info`){
         message.channel.send("------------------------------------");
         message.channel.send(new Date().getTime() - message.createdTimestamp + "ms");
