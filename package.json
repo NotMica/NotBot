@@ -1,0 +1,17 @@
+{
+  "name": "notbot",
+  "version": "1.0.0",
+  "description": "NotMica's bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NotMica",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "fortnite": "^4.1.1",
+    "infinite-loop": "^0.2.2",
+    "request": "^2.87.0"
+  }
+}
