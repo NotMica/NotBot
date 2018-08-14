@@ -35,7 +35,8 @@ bot.on("ready", async () =>{
     console.log(`║     ${bot.user.username} je READY!      ║`);
     console.log(`║       ${botconfig.version}          ║`);
     console.log(`╚═══════════════════════════╝`);
-    bot.user.setActivity("si v JavaScriptu");
+    bot.user.setActivity('Rudolfa v depresích', { type: 'Watching' });
+    //bot.user.setActivity(`si v JavaScriptu | ${botconfig.version}`);
 });
 
 bot.on("message", async message => {
@@ -65,8 +66,9 @@ function randomQuote() {
 il.add(randomQuote, []);
 
 il.run();
-
-console.log(randomQuote());
+console.log(`┌────────────────────────────┐`);
+console.log("║ Quotes successuly loaded!  ║");
+console.log(`└────────────────────────────┘`);
 
 bot.on("message", (message) => {
     let messageArray = message.content.split(" ");
