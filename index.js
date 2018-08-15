@@ -35,8 +35,8 @@ bot.on("ready", async () =>{
     console.log(`║     ${bot.user.username} je READY!      ║`);
     console.log(`║       ${botconfig.version}          ║`);
     console.log(`╚═══════════════════════════╝`);
-    bot.user.setActivity('Rudolfa v depresích', { type: 'Watching' });
-    //bot.user.setActivity(`si v JavaScriptu | ${botconfig.version}`);
+    //bot.user.setActivity('Rudolfa v depresích', { type: 'Watching' });
+    bot.user.setActivity(`si v JavaScriptu | ${botconfig.version}`);
 });
 
 bot.on("message", async message => {
