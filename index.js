@@ -36,8 +36,31 @@ bot.on("ready", async () =>{
     console.log(`║       ${botconfig.version}          ║`);
     console.log(`╚═══════════════════════════╝`);
     //bot.user.setActivity('Rudolfa v depresích', { type: 'Watching' });
-    bot.user.setActivity(`si v JavaScriptu | ${botconfig.version}`);
+    bot.user.setActivity(`si v JavaScriptu | ${botconfig.version}`);  
 });
+
+client.on('ready', () => {
+    setTimeout(function(){ // in leftToEight() milliseconds run this:
+        sendMessage(); // send the message once
+        var dayMillseconds = 1000 * 60 * 60 * 24;
+        setInterval(function(){ // repeat this every 24 hours
+            sendMessage();
+        }, dayMillseconds)
+    }, leftToEight())
+})
+
+function leftToEight(){
+    var d = new Date();
+    return (-d + d.setHours(8,0,0,0));
+}
+
+function sendMessage(){
+    var guild = client.guilds.get('guildid');
+    if(guild && guild.channels.get('channelid')){
+        guild.channels.get('channelid').send("Dobré ráno chlapci :slight_smile:");
+    }
+
+};
 
 bot.on("message", async message => {
     if(message.author.bot) return;
@@ -90,28 +113,28 @@ bot.on("message", async message => {
     if(commandfile) commandfile.run(bot,message,args);
 
     if (cmd === `Mico`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
       }
     else if (cmd === `mico`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     else if (cmd === `Mico?`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     else if (cmd === `mico?`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     else if (cmd === `Míco?`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     else if (cmd === `Míco`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     else if (cmd === `míco?`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     else if (cmd === `míco`){
-        message.channel.sendMessage("Mica tu není ale můžeš mi tu pro něj zanechat vzkaz! :smile:");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
     }
     ;
 
@@ -162,10 +185,11 @@ bot.on("message", async message => {
         message.channel.send(new Date().getTime() - message.createdTimestamp + "ms");
         message.channel.send(`~${version}~`);
         message.channel.send("Visual Studio Code + JavaScript");
-        message.channel.send("Kontakt: NotBot@freem1ca.8u.cz");
+        message.channel.send("Kontakt: Error");
         message.channel.send("Love ya! Papa :heart:");
         message.channel.send("------------------------------------");
     }
 });
+
 
 bot.login(process.env.BOT_TOKEN);
