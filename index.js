@@ -3,6 +3,7 @@ const quoteconfig = require("./quoteconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
+const client = new Discord.Client();
 let prefix = botconfig.prefix;
 let version = botconfig.version;
 bot.commands = new Discord.Collection();
@@ -113,30 +114,58 @@ bot.on("message", async message => {
     if(commandfile) commandfile.run(bot,message,args);
 
     if (cmd === `Mico`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
       }
     else if (cmd === `mico`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     else if (cmd === `Mico?`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     else if (cmd === `mico?`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     else if (cmd === `Míco?`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     else if (cmd === `Míco`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     else if (cmd === `míco?`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     else if (cmd === `míco`){
-        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli @Notko_#3284");
+        message.channel.sendMessage("Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>");
     }
     ;
+    
+    if (cmd === `Notko`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+      }
+    else if (cmd === `notko`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+    }
+    else if (cmd === `Notko?`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+    }
+    else if (cmd === `notko?`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+    }
+    else if (cmd === `Notko_?`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+    }
+    else if (cmd === `Notko_`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+    }
+    else if (cmd === `notko_?`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+    }
+    else if (cmd === `notko_`){
+        message.channel.sendMessage("Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:");
+
+    };
+
+    
 
     if (cmd === `nečum`){
         message.channel.send({file: "https://i.imgur.com/wnQ8Gc5.png"});
@@ -190,6 +219,5 @@ bot.on("message", async message => {
         message.channel.send("------------------------------------");
     }
 });
-
 
 bot.login(process.env.BOT_TOKEN);
