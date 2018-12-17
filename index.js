@@ -41,10 +41,10 @@ bot.on("ready", async () =>{
 });
 
 client.on('ready', () => {
-    setTimeout(function(){ // in leftToEight() milliseconds run this:
-        sendMessage(); // send the message once
+    setTimeout(function(){
+        sendMessage();
         var dayMillseconds = 1000 * 60 * 60 * 24;
-        setInterval(function(){ // repeat this every 24 hours
+        setInterval(function(){ 
             sendMessage();
         }, dayMillseconds)
     }, leftToEight())
@@ -214,7 +214,7 @@ bot.on("message", async message => {
         message.channel.send(new Date().getTime() - message.createdTimestamp + "ms");
         message.channel.send(`~${version}~`);
         message.channel.send("Visual Studio Code + JavaScript");
-        message.channel.send("Kontakt: Error");
+        message.channel.send("Kontakt: Notko_#3284");
         message.channel.send("Love ya! Papa :heart:");
         message.channel.send("------------------------------------");
     }
