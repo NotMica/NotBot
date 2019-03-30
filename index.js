@@ -167,9 +167,9 @@ bot.on("message", async message => {
 
     
 
-    if (cmd === `nečum`){
+    /* if (cmd === `nečum`){
         message.channel.send({file: "https://i.imgur.com/wnQ8Gc5.png"});
-      }
+     }
     else if(cmd === "Nečum"){
         message.channel.send({file: "https://i.imgur.com/wnQ8Gc5.png"});
     };
@@ -194,7 +194,7 @@ bot.on("message", async message => {
     }
     else if(cmd === "reeeeeeee"){
         message.channel.send({file: "https://i.imgur.com/B8PM9ZP.png"});
-    };
+    }; */ 
 
     if (cmd === "papa"){
         message.channel.sendMessage("Papa :heart:");
