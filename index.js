@@ -215,7 +215,6 @@ bot.on("message", async message => {
         message.channel.send(`~${version}~`);
         message.channel.send("Visual Studio Code + JavaScript");
         message.channel.send("Kontakt: Notko_#3284");
-        message.channel.send("Love ya! Papa :heart:");
         message.channel.send("------------------------------------");
     }
 });
