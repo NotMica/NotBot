@@ -177,39 +177,6 @@ bot.on("message", async message => {
       "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
     );
   }
-if (cmd === `Notko`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `notko`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `Notko?`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `notko?`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `Notko_?`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `Notko_`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `notko_?`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  } else if (cmd === `notko_`) {
-    message.channel.sendMessage(
-      "Notko tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
-    );
-  }
   //
   if (cmd === `Botko`) {
     message.channel.sendMessage(
