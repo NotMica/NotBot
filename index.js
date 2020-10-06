@@ -123,6 +123,11 @@ bot.on("message", async message => {
             "Jsem tu! Copak? :smile:"
         );
     }
+    if (cmd === `Notko` || cmd === `notko` || cmd === `Notko?` || cmd === `notko?` || cmd === `Notko_` || cmd === `notko_` || cmd === `Notko_?` || cmd === `notko_?`) {
+        message.channel.sendMessage(
+            "Notko_ tu sice není, ale můžeš mi to pro něj nechat vzkaz, který mu pak následně sdělím :smile:"
+        );
+    }
     /* if (cmd === `nečum`){
           message.channel.send({file: "https://i.imgur.com/wnQ8Gc5.png"});
        }
