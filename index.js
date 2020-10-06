@@ -112,13 +112,13 @@ bot.on("message", async message => {
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if (commandfile) commandfile.run(bot, message, args);
 
-    if (cmd === `Mico` || `mico` || `Mico?` || `mico?` || `míco` || `Míco` || `míco?` || `Míco?`) {
+    if (cmd === `Mico` || cmd === `mico` || cmd === `Mico?` || cmd === `mico?` || cmd === `míco` || cmd === `Míco` || cmd === `míco?` || cmd === `Míco?`) {
         message.channel.sendMessage(
             "Nikoho s takovým nickem neznám :confused: Možná máš namysli <@308941843654246410>"
         );
     }
 
-    if (cmd === `Botko` || `botko` || `Botko?` || `botko?`) {
+    if (cmd === `Botko` || cmd === `botko` || cmd === `Botko?` || cmd === `botko?`) {
         message.channel.sendMessage(
             "Jsem tu! Copak? :smile:"
         );
@@ -152,7 +152,7 @@ bot.on("message", async message => {
           message.channel.send({file: "https://i.imgur.com/B8PM9ZP.png"});
       }; */
 
-    if (cmd === "papa" || "Papa" || "Papa :heart:" || "papa :heart:") {
+    if (cmd === "papa" || cmd === "Papa" || cmd === "Papa :heart:" || cmd === "papa :heart:") {
         message.channel.sendMessage("Papa :heart:");
     }
 
